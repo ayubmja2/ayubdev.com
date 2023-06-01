@@ -3,7 +3,18 @@
 	padding:0;
 	box-sizing: border-box;
 }
-
-body{
-	background-color:blue;
+.nav a{
+    text-decoration: none;
 }
+.nav li {
+    margin:20px;
+    display: inline-block;
+    list-style: none;
+    
+    
+}
+.nav{
+    display: flex;
+    justify-content: right;
+}
+
