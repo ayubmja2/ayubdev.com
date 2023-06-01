@@ -3,9 +3,15 @@ const server = require('http').createServer();
 const app = express();
 const PORT = 3000;
 
+
+
+app.use(express.static(__dirname + '/public'));
+
+
 app.get('/', function(req, res) {
   res.sendFile('index.html', {root: __dirname});
 });
+
 
 server.on('request', app);
 
