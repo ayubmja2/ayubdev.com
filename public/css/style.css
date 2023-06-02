@@ -3,18 +3,26 @@
 	padding:0;
 	box-sizing: border-box;
 }
+
+nav{
+    background-color: blue
+}
+.nav {
+    display:flex;
+    justify-content: right;
+    margin:10px;
+    padding:15px;
+}
 .nav a{
     text-decoration: none;
+    color: white;
+    font-size: 20px
 }
 .nav li {
     margin:20px;
     display: inline-block;
     list-style: none;
+    text-size 20px;
     
-    
-}
-.nav{
-    display: flex;
-    justify-content: right;
 }
 
