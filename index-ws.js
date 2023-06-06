@@ -12,6 +12,14 @@ app.get('/', function(req, res) {
   res.sendFile('index.html', {root: __dirname});
 });
 
+app.get('/index.html', function(req, res){
+    res.sendFile('index.html', {root: __dirname});
+});
+
+app.get('/portfolio.html', function(req, res){
+    res.sendFile('portfolio.html', {root: __dirname});
+});
+
 
 server.on('request', app);
 
