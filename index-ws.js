@@ -6,18 +6,18 @@ const PORT = 3000;
 
 
 app.use(express.static(__dirname + '/public'));
-
+app.use(express.static(__dirname, {extensions: ['html']}));
 
 app.get('/', function(req, res) {
-  res.sendFile('index.html', {root: __dirname});
+  res.sendFile(__dirname + '/index.html');
 });
 
-app.get('/index.html', function(req, res){
-    res.sendFile('index.html', {root: __dirname});
+app.get('/index', function(req, res){
+    res.sendFile(__dirname + '/index.html');
 });
 
-app.get('/portfolio.html', function(req, res){
-    res.sendFile('portfolio.html', {root: __dirname});
+app.get('/portfolio', function(req, res){
+    res.sendFile(__dirname + '/portfolio.html');
 });
 
 
