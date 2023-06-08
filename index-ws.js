@@ -8,6 +8,9 @@ const PORT = 3000;
 app.use(express.static(__dirname + '/public'));
 app.use(express.static(__dirname, {extensions: ['html']}));
 
+app.get('/favicon.ico',(req,res) => {
+	res.sendFile('/images/favicon_io/favicon-32x32.png');
+});
 app.get('/', function(req, res) {
   res.sendFile(__dirname + '/index.html');
 });
