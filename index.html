@@ -13,31 +13,13 @@
 	</head>
 
 	<body>
-        <div class="container">
-            <header>
-                <div class="developer">
-                        <img src="#" alt="Ayub">
-                        <h1>Ayub Ali</h1>
-                </div>
-                <div class="socialLinks">
-                    <ul>
-                        <li>Twitter</li>
-                        <li>Github</li>
-                        <li>LinkedIn</li>
-                    </ul>
-                </div>
-            </header>
-            <main>
-                <h1>Hello</h1>
-            </main>
-        </div>
+        <section id="intro">
+            <p>Hi, my name is <span>Ayub Ali.</span></p>
+            <h2>I develop websites.</h2>
+            <p>I'm a developer specializing in BackEnd Web Development.</p>
+            <p>Currently, I'm completing the FrontEndMasters Bootcamp, trying to start
+                a career in tech.
+            </p>
+        </section>
 	</body>
-
-	<script>
-		let ws;
-		const proto = window.location.protocol === 'https:' ? 'wss' : 'ws';
-		ws = new WebSocket(`${proto}://${window.location.host}`);
-		ws.onmessage = event => {console.log(event.data)};
-		
-	</script>
 </html>
